@@ -15,5 +15,10 @@ Pizza.prototype.price = function() {
   } else {
     price += 0;
   }
+  if (secondTopping === "pepperoncini" || secondTopping === "mushrooms" || secondTopping === "spinach") {
+    price += 2;
+  } else {
+    price += 0;
+  }
   return price;
 };
