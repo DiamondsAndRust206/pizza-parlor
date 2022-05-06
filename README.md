@@ -16,3 +16,6 @@ Expected Output: 2
 Test: "It should return the price of the pizza after secondTopping is added."
 Code: const pizza1 = new Pizza("bacon", "mushrooms");
 Expected Output: 4
+Test: "It should return the price of the pizza after adding both toppings and size."
+Code: const pizza1 = new Pizza("bacon", "mushrooms", "extra-large");
+Expected Output: 16
