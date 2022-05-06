@@ -1,18 +1,19 @@
 Describe: Pizza()
 
-Test: "It should return a Pizza object with four properties for two toppings, size and price."
+Test: "It should return a Pizza object with three properties for two toppings and size."
 
-Code: const myPizza = new Pizza("bacon", "mushrooms", "medium", price 0);
+Code: const pizza1 = new Pizza("bacon", "mushrooms", "medium");
 
 Expected Output: Pizza {
     "firstTopping": "bacon",
     "secondTopping": "mushrooms",
     "size": "medium",
-    "price": 0
 }
 
 Describe: Pizza.prototype.price()
 
-Test: "It should return the price of the pizza after toppings and size are selected"
+Test: "It should return the price of the pizza after firstTopping is added."
 
-Code: 
+Code: const pizza1 = new Pizza("bacon");
+
+Expected Output: 2
