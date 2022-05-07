@@ -20,6 +20,7 @@ Pizza.prototype.price = function() {
   } else {
     price += 0;
   }
+  
   if (size === "extra-large") {
     price += 12;
   } else if (size === "large") {
@@ -47,17 +48,3 @@ $(document).ready(function() {
     $("#output").text("$" + showOrder);
   });
 });
-
-
-
-// let addOrder = $("#output").append("<li>" + showOrder + "</li>");
-// let orderList = [];
-// orderList.push(addOrder);
-// $("#button2").on("click", "total-button", function() {
-//   let array = orderList.push(addOrder);
-//   let totalPrice = 0;
-//   for (let i = 0; i < array.length; i++) {
-//     totalPrice += array[i];
-//   }
-//   totalPrice;
-// });
