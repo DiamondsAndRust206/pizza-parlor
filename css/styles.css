@@ -2,7 +2,34 @@ body {
   background-image: url("https://wallpaperaccess.com/full/3843522.jpg");
 }
 
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+label {
+  font-size: large;
+  font-weight: bold;
+}
+
+#output {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 #image {
+  margin: 20px;
   width: 100%;
+  text-align: center;
+}
+
+.btn {
+  margin: 20px;
+}
+
+#button {
   text-align: center;
 }

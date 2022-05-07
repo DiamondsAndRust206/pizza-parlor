@@ -30,17 +30,23 @@
         <option value="spinach">Spinach</option>
       </select>
       <label for="size">Choose pizza size:</label>
-      <select id="size" class="form-control">
+      <select id="size" class="form-control" required>
         <option></option>
-        <option value="personalpan">Personal pan pizza $6</option>
+        <option value="small">Personal pan pizza $6</option>
         <option value="medium">Medium $8</option>
         <option value="large">Large $10</option>
         <option value="extra-large">Extra Large $12</option>
       </select>
-      <button type="submit" class="btn">Place Your Order</button>
+      <div id="button">
+        <button type="submit" class="btn btn-success">Add Pizza To Order</button>
+      </div>
+      <div id="output"></div>
+      <div id="button">
+        <button type="submit" class="btn btn-success">Total Order</button>
+      </div>
     </form>
 
-    <div id="output"></div>
+    
     <div id="image">
       <img id="pic" src="img/pizza.jpg">
     </div>

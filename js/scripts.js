@@ -26,8 +26,10 @@ Pizza.prototype.price = function() {
     price += 10;
   } else if (size === "medium") {
     price += 8;
-  } else {
+  } else if (size === "small") {
     price += 6;
+  } else {
+    price += 0;
   }
   return price;
 };
@@ -41,7 +43,9 @@ $(document).ready(function() {
     const inputSize = $("#size").val();
     let newOrder = new Pizza(inputFirstTopping, inputSecondTopping, inputSize)
     let showOrder = newOrder.price();
-    
-    $("#output").html(showOrder);
+
+    $("#output").append("<li>" + showOrder + "</li>");
+    let orderList = [];
+
   });
 });
