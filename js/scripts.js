@@ -31,3 +31,17 @@ Pizza.prototype.price = function() {
   }
   return price;
 };
+
+$(document).ready(function() {
+  $("form#customer-input").submit(function(event) {
+    event.preventDefault();
+
+    const inputFirstTopping = $("#meat-toppings").val();
+    const inputSecondTopping = $("#veggie-toppings").val();
+    const inputSize = $("#size").val();
+    let newOrder = new Pizza(inputFirstTopping, inputSecondTopping, inputSize)
+    let showOrder = newOrder.price();
+    
+    $("#output").html(showOrder);
+  });
+});
